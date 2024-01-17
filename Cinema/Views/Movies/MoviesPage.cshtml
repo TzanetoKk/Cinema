@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Cinema.Models.MovieViewModel
+@{
+    ViewBag.Title = "Movies";
+}
+
+
+<div class="movies-container">
+    @foreach (var movie in Model.Movies)
+    {
+        <div class="movie">
+            <img src="@movie.ImageUrl" alt="@movie.Name">
+            <div class="movie-info">
+                <div class="movie-title">@movie.Name</div>
+                <div class="movie-content">@movie.Content</div>
+                <div class="movie-length">Length: @movie.Length minutes</div>
+                <div class="movie-type">Type: @movie.Type</div>
+                <div class="movie-summary">@movie.Summary</div>
+                <div class="movie-director">Director: @movie.Director</div>
+                <div class="ticket-button">
+                    <a href="@Url.Action("BuyTicket", "Ticket")">
+                        <img src="https://via.placeholder.com/20" alt="Ticket Icon">
+                        ΕΙΣΙΤΗΡΙΑ
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

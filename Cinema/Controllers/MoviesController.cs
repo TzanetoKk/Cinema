@@ -1,19 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Cinema.Models;
+using Microsoft.AspNetCore.Mvc;
+using Cinema.Services;
 
-public class MoviesController : Controller
+namespace Cinema.Controllers
 {
-    private readonly MoviesService _moviesService;
-
-    public MoviesController(MoviesService moviesService)
+    public class MoviesController : Controller
     {
-        _moviesService = moviesService;
-    }
+        private readonly MoviesService _moviesService;
 
-    public IActionResult Index()
-    {
-        var movies = _moviesService.GetAllMovies();
-        return View(movies);
-    }
+        public MoviesController(MoviesService moviesService)
+        {
+            _moviesService = moviesService;
+        }
 
-    // Άλλες μέθοδοι για τις λειτουργίες των ταινιών
+        public IActionResult Index()
+        {
+            var movies = _moviesService.GetAllMovies();
+
+            var viewModel = new MovieViewModel
+            {
+                Movies = movies
+            };
+
+            return View("MoviesPage", viewModel);
+        }
+    }
 }
