@@ -7,21 +7,28 @@
 }
 
 
+<div class="movies-header container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="page-heading">ΤΑΙΝΙΕΣ ΑΥΤΗ ΤΗΝ ΕΒΔΟΜΑΔΑ</h1>
+        </div>
+    </div>
+</div>
+
 <div class="movies-container">
     @foreach (var movie in Model.Movies)
     {
         <div class="movie">
             <img src="@movie.ImageUrl" alt="@movie.Name">
             <div class="movie-info">
-                <div class="movie-title">@movie.Name</div>
-                <div class="movie-content">@movie.Content</div>
-                <div class="movie-length">Length: @movie.Length minutes</div>
-                <div class="movie-type">Type: @movie.Type</div>
-                <div class="movie-summary">@movie.Summary</div>
-                <div class="movie-director">Director: @movie.Director</div>
+                <div class="info movie-title">@movie.Name</div>
+                <div class="info movie-length">Length: @movie.Length minutes</div>
+                <div class="info movie-type">Type: @movie.Type</div>
+                <div class="info movie-summary">@movie.Summary</div>
+                <div class="info movie-director">Director: @movie.Director</div>
                 <div class="ticket-button">
-                    <a href="@Url.Action("BuyTicket", "Ticket")">
-                        <img src="https://via.placeholder.com/20" alt="Ticket Icon">
+                    <a class="btn btn-warning" href="@Url.Action("BuyTicket", "Ticket")">
+                        <img src="https://cdn-icons-png.flaticon.com/512/8400/8400549.png" alt="Ticket Icon">
                         ΕΙΣΙΤΗΡΙΑ
                     </a>
                 </div>

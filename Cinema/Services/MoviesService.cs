@@ -14,9 +14,8 @@ namespace Cinema.Services
                 new Movies
                 {
                     Id = 1,
-                    ImageUrl = "https://via.placeholder.com/300",
+                    ImageUrl = "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg   ",
                     Name = "Inception",
-                    Content = "A mind-bending heist thriller",
                     Length = 148,
                     Type = "Sci-Fi",
                     Summary = "Inception is a 2010 science fiction action film...",
@@ -26,9 +25,8 @@ namespace Cinema.Services
                 new Movies
                 {
                     Id = 2,
-                    ImageUrl = "https://via.placeholder.com/300",
+                    ImageUrl = "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
                     Name = "The Shawshank Redemption",
-                    Content = "Two imprisoned men bond over a number of years...",
                     Length = 142,
                     Type = "Drama",
                     Summary = "The Shawshank Redemption is a 1994 American drama film...",
@@ -38,9 +36,8 @@ namespace Cinema.Services
                 new Movies
                 {
                     Id = 3,
-                    ImageUrl = "https://via.placeholder.com/300",
+                    ImageUrl = "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
                     Name = "The Godfather",
-                    Content = "The aging patriarch of an organized crime dynasty...",
                     Length = 175,
                     Type = "Crime",
                     Summary = "The Godfather is a 1972 American crime film directed by...",
@@ -50,9 +47,8 @@ namespace Cinema.Services
                 new Movies
                 {
                     Id = 4,
-                    ImageUrl = "https://via.placeholder.com/300",
+                    ImageUrl = "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
                     Name = "The Dark Knight",
-                    Content = "When the menace known as the Joker emerges...",
                     Length = 152,
                     Type = "Action",
                     Summary = "The Dark Knight is a 2008 superhero film directed by...",
@@ -62,9 +58,8 @@ namespace Cinema.Services
                 new Movies
                 {
                     Id = 5,
-                    ImageUrl = "https://via.placeholder.com/300",
+                    ImageUrl = "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
                     Name = "Pulp Fiction",
-                    Content = "The lives of two mob hitmen, a boxer, a gangster's...",
                     Length = 154,
                     Type = "Crime",
                     Summary = "Pulp Fiction is a 1994 American crime film written and directed by...",
@@ -74,9 +69,8 @@ namespace Cinema.Services
                 new Movies
                 {
                     Id = 6,
-                    ImageUrl = "https://via.placeholder.com/300",
+                    ImageUrl = "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
                     Name = "Forrest Gump",
-                    Content = "The presidencies of Kennedy and Johnson, the Vietnam...",
                     Length = 142,
                     Type = "Drama",
                     Summary = "Forrest Gump is a 1994 American drama film directed by...",

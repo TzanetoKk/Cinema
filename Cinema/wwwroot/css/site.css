@@ -18,25 +18,45 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: darkorange;
 }
 
 /*-----------------------------------------MOVIES PAGE---------------------------------------------*/
 
-.movies-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
+.page-heading {
+    text-align: center;
+    font-size: 3em;
+    margin: 50px 0;
+    color: papayawhip;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
 }
 
+.movies-header {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/022/957/853/small/silhouette-of-the-bloody-filmstrip-sign-for-movie-icon-symbol-with-genre-horror-thriller-gore-sadistic-splatter-slasher-mystery-scary-or-halloween-poster-film-movie-format-png.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+    .movies-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
 .movie {
-  width: 22%;
-  margin: 10px;
-  border: 1px solid #ddd; /* Add border */
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
-  padding:10px;
+    background-color: wheat;
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
 }
 
 .movie img {
@@ -47,28 +67,23 @@ body {
 .movie-title {
   margin-top: 10px;
   padding: 10px; /* Increased padding */
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 
-.movie-description {
-  margin-top: 5px;
-  padding: 10px; /* Increased padding */
-  font-size: 14px;
+.info {
+    border-bottom: 1px solid #9f9f9f91;
+    padding: 5px;
+}
+
+.movie-info {
+    margin-top: 5px;
+    padding: 10px; /* Increased padding */
+    font-size: 18px;
 }
 
 .ticket-button {
   margin-top: 10px;
-  display: flex;
-  align-items: center;
-  
-  padding: 10px;
-  background-color: #ff9900; /* Button background color */
-  color: #fff; /* Button text color */
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .ticket-button img {
