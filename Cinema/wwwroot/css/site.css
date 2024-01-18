@@ -50,12 +50,13 @@ body {
     }
 
 .movie {
+    position: relative;
     background-color: wheat;
     width: 30%;
     margin: 10px;
-    border: 1px solid #ddd; 
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
 
@@ -77,18 +78,36 @@ body {
 }
 
 .movie-info {
+    margin-bottom: 40px;
     margin-top: 5px;
-    padding: 10px; /* Increased padding */
+    padding: 10px; 
     font-size: 18px;
 }
 
 .ticket-button {
-  margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
 }
 
 .ticket-button img {
   width: 20px;
   margin-right: 5px;
+}
+
+/*Responsiveness*/
+@media (max-width: 992px) {
+    .movie {
+        width: 46%;
+    }
+    .movie-info {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .movie {
+        width: 80%;
+    }
+
 }
 /*-----------------------------------------MOVIES PAGE---------------------------------------------*/
 

@@ -13,7 +13,7 @@ namespace Cinema.Controllers
             _moviesService = moviesService;
         }
 
-        public IActionResult Index()
+        public IActionResult Movies()
         {
             var movies = _moviesService.GetAllMovies();
 
