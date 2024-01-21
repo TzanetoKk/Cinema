@@ -17,12 +17,7 @@ namespace Cinema.Controllers
         {
             var movies = _moviesService.GetAllMovies();
 
-            var viewModel = new MovieViewModel
-            {
-                Movies = movies
-            };
-
-            return View("MoviesPage", viewModel);
+            return View("MoviesPage", movies);
         }
     }
 }

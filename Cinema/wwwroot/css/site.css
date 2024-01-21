@@ -19,6 +19,7 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-color: currentColor!important;
 }
 
 /*-----------------------------------------MOVIES PAGE---------------------------------------------*/
@@ -32,13 +33,6 @@ body {
     font-weight: bold;
     letter-spacing: 2px;
     font-family: 'Arial', sans-serif;
-}
-
-.movies-header {
-    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/022/957/853/small/silhouette-of-the-bloody-filmstrip-sign-for-movie-icon-symbol-with-genre-horror-thriller-gore-sadistic-splatter-slasher-mystery-scary-or-halloween-poster-film-movie-format-png.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    
 }
 
     .movies-container {
