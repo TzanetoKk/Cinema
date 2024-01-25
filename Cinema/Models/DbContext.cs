@@ -6,6 +6,10 @@ namespace Cinema.Models
     {
         public DbSet<Movies> Movies { get; set; }
 
+        /*public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+        }*/
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=Cinema.db");
